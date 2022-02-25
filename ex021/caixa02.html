@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3a3a3ac4;
+            margin: 0px;
+        }
+
+        #cima{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        nav{
+            background-color: rgb(66, 66, 66);
+            padding: 3px;
+            box-shadow:  1px 1px 1px 1px rgba(0, 0, 0, 0.342);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            padding: 1px;
+            border-radius: 20px;
+        }
+
+        article{
+            background-color: lightgray;
+
+        }
+
+        article > aside{
+            background-color: reg(165, 165, 165);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 10px 30px;
+        }
+
+       
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paraná Imports</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="cima">
+            <p>Esportes Políticas Tecnologia</p>
+        </section>
+
+        <section id="noticias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro illo culpa expedita architecto natus asperiores quam, dicta debitis necessitatibus laboriosam doloremque minima quos earum similique atque dignissimos sunt a! Fuga?</p>
+                    <aside>
+                        <p>Artigo escrito por Gabriel F.</p>
+                    </aside>
+                    <div>
+                        conteúdo surpresa
+                        <p>teste texto oculto</p>
+                    </div>
+                    <p>se tudo ocorrer certo, vai aparecer um texto oculto</p>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel</p>
+    </footer>
+</body>
+</html>
